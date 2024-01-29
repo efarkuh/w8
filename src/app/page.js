@@ -1,8 +1,17 @@
-export default function Home() {
+
+export default function PostsPage() {
+  // const posts = await sql`
+  //   SELECT * FROM posts;
+  // `;
+
   return (
-    
-  <h2>
-    Docs
-  </h2>
-            );
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  );
 }
+
+
+// const [post] = await sql`
+//   SELECT * FROM posts WHERE id = ${params.id};
+// `;

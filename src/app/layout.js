@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -11,7 +12,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav>
+          <Link href="/">Home</Link>
+          <Link href="/posts">Posts</Link>
+          <Link href="/about">About</Link>
+
+        </nav>
+        
+        {children}
+        
+        </body>
     </html>
   );
 }
